@@ -7,19 +7,22 @@ html {
 
 
 body {
-	font-family: 'Georgia', serif; font-size: 17px; color: #000;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 16px;
+	font-weight: lighter;
+	color: #000;
 	max-width: 750px;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 
-	a:hover { color: #3b185f; background: #f9f8fa; }
+	a:hover { color: #3b185f; background: #FFFFFF; }
 
 	> header {
 		background: #FFFFFF;
-        padding-top: .5em;
+        	padding-top: .5em;
 		h1 {
 			a, a:visited, a:hover {
-				color: #8C8C8C;
+				color: #8c8c8c;
 			}
 		}
 	}
@@ -27,16 +30,18 @@ body {
 	> nav {
 		background: #FFFFFF;
 		font-size: 20px;
+		font-weight: lighter;
 		border-bottom: 1px solid #F2F2F2;
 		padding-left: 0px;
 		padding-right: 0px;
 
 		a {
-           text-decoration: none;
-           font-size: 22px;
-           padding-left: 10px;
-           padding-right: 10px;
-        }
+			font-family: 'Helvetica Neue', sans-serif;
+           		text-decoration: none;
+           		font-size: 22px;
+           		padding-left: 10px;
+           		padding-right: 10px;
+        	}
 		form .search {
 			border-radius: 0.2em 0.2em 0.2em 0.2em;
 			box-shadow: none;
@@ -49,8 +54,8 @@ body {
 
 		li + li {
 			border-left: 0px;
-
 			a {
+				font-family: 'Helvetica Neue', sans-serif;
 				border: 0px;
 			}
 		}
@@ -70,13 +75,13 @@ body {
 	    text-align: center;
 		background: #FFFFFF;
 		text-shadow: none;
-		color: #888;
+		color: #BBB;
 	  	padding-left: 0;
 	  	padding-right: 0;
 		border-top: 0px;
 		padding-left: 0px;
 		padding-right: 0px;
-		font-size: 15px;
+		font-size: 12px;
 	}
 
 	#content {
@@ -139,9 +144,11 @@ article {
 			}
 		}
 
-		h1 {
+		h1 { // Post Title
 			a {
-				font-weight: 400;
+				font-family: 'Helvetica Neue', sans-serif;
+				font-weight: 100;
+				font-size: 1.25em;
 			}
 
 			a:hover {
