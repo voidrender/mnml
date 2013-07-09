@@ -74,7 +74,7 @@ body {
 	}
 
 	> footer {
-	    text-align: center;
+		text-align: center;
 		background: #FFFFFF;
 		text-shadow: none;
 		color: #BBB;
@@ -83,7 +83,9 @@ body {
 		border-top: 0px;
 		padding-left: 0px;
 		padding-right: 0px;
-		font-size: 12px;
+		font-size: 14px;
+		font-family: 'Helvetica Neue', sans-serif;
+		font-weight: 100;
 	}
 
 	#content {
@@ -125,10 +127,12 @@ article {
 		padding-bottom: 1.5em;
 		margin-top: 4em;
 		position: relative;
-		text-align: center;		
-		border-top: dotted 1px #D1D1D1;
-		border-bottom: dotted 1px #D1D1D1;
+		text-align: center;
+		border-top: solid 1px #b0b0b0;
+		border-bottom: solid 1px #b0b0b0;
 		color: #888;
+		font-weight: 100;
+		background-image: none;
 	}
 
 	div.pagination a {
@@ -138,6 +142,7 @@ article {
 	.blog-index {
 		article {
 			padding-top: 2em;
+			//background-image: none;
 
 			header {
                 		padding-top: 2em;
