@@ -30,8 +30,9 @@ body {
 	> nav {
 		background: #FFFFFF;
 		font-size: 20px;
-		font-weight: lighter;
-		border-bottom: 1px solid #F2F2F2;
+		font-weight: 100;
+		border-bottom: 1px solid #b0b0b0;
+		border-top: 1px solid #b0b0b0;
 		padding-left: 0px;
 		padding-right: 0px;
 
@@ -55,7 +56,6 @@ body {
 		li + li {
 			border-left: 0px;
 			a {
-				font-family: 'Helvetica Neue', sans-serif;
 				border: 0px;
 			}
 		}
@@ -158,7 +158,7 @@ article {
 
 		time {
 			font-family: 'Helvetica Neue', sans-serif;
-			font-weight: lighter;
+			font-weight: 100;
 		}
 }
 
