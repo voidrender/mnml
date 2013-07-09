@@ -203,3 +203,31 @@ figure.code {
 aside {
 	display: none;
 }
+
+h1.entry-title {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: 100;
+}
+
+#blog-archives {
+	h2 {
+		font-family: 'Helvetica Neue', sans-serif;
+		font-weight: 100;
+	}
+
+	article {
+		h1 {
+			a, a:hover {
+				font-family: 'Helvetica Neue', sans-serif;
+				font-weight: 100;
+				text-decoration: none;
+			}
+		}
+
+		time {
+			font-family: 'Helvetica Neue', sans-serif;
+			font-weight: 100;
+			font-size: 0.9em;
+		}
+	}
+}
