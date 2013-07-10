@@ -90,7 +90,7 @@ body {
 
 	#content {
 		> article {
-		    padding-top: 2em;
+		    	padding-top: 2em;
 			padding-left: 0px;
 			padding-right: 0px;
 		}
@@ -99,6 +99,10 @@ body {
 			> article, > section {
 				padding-left: 0px;
 				padding-right: 0px;
+				h1 {
+					font-family: 'Helvetica Neue', sans-serif;
+					font-weight: 100;
+				}
 			}	
 		}
 	}
@@ -141,7 +145,7 @@ article {
 
 	.blog-index {
 		article {
-			padding-top: 2em;
+			padding-top: 7em;
 			//background-image: none;
 
 			header {
