@@ -106,7 +106,6 @@ body > nav {
 @mixin mask-subscription-nav($feed: 'rss.png'){
   position: relative; top: 0px;
   text-indent: -999999em;
-  background-color: $nav-border-right;
   border: 0;
   padding: 0;
   &,&:after { @include mask-image($feed); }
@@ -115,7 +114,12 @@ body > nav {
     position: absolute; top: -1px; left: 0;
     background-color: lighten($nav-color, 25);
   }
-  &:hover:after { background-color: lighten($nav-color, 20); }
+  &:hover:after
+  {
+    background-color: #f70;
+	transition: all .3s ease-in;
+	-webkit-transition: all .3s ease-in;
+  }
 }
 .maskImage {
   body > nav {
