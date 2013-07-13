@@ -113,12 +113,14 @@ body > nav {
     content: "";
     position: absolute; top: -1px; left: 0;
     background-color: lighten($nav-color, 25);
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
   }
   &:hover:after
   {
     background-color: #f70;
-	transition: all .3s ease-in;
-	-webkit-transition: all .3s ease-in;
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
   }
 }
 .maskImage {
