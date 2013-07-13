@@ -17,8 +17,27 @@ body {
 	a:hover { color: #3b185f; background: #FFFFFF; }
 
 	> header {
-		background: #FFFFFF;
-        	padding-top: .5em;
+		background: #ffffff;
+		padding-top: 2em;
+		padding-bottom: 2em;
+		font-family: 'Helvetica Neue', sans-serif;
+		font-weight: 100;
+		text-align: center;
+		
+		.header-title {
+			font-size: 2em;
+			text-transform: lowercase;
+			letter-spacing: 12px;
+			color: #222;
+		}
+		
+		.header-subtitle {
+			font-size: 1em;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			color: #3a8acc;
+		}
+		
 		h1 {
 			a, a:visited, a:hover {
 				color: #8c8c8c;
