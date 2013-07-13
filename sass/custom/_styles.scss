@@ -13,6 +13,11 @@ body {
 	max-width: 750px;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
+	
+	h1, h2, h3, h4, h5 {
+		font-family: 'Helvetica Neue', sans-serif;
+		font-weight: 100;
+	}
 
 	a:hover {
 		color: #3a8acc !important;
@@ -220,10 +225,7 @@ article {
 			letter-spacing: 1px;
 			text-transform: none;
 		}
-
-		
 	}
-	
 }
 figure.code figcaption {
 	border: none;
