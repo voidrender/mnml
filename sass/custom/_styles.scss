@@ -14,7 +14,10 @@ body {
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 
-	a:hover { color: #3b185f; background: #FFFFFF; }
+	a:hover {
+		color: #3b185f;
+		background: #FFFFFF;
+	}
 
 	> header {
 		background: #ffffff;
@@ -168,7 +171,7 @@ article {
 			padding-top: 7em;
 
 			header {
-                		padding-top: 2em;
+				padding-top: 2em;
 				padding-left: 0;
   				padding-right: 0;
 			}
@@ -213,17 +216,29 @@ article {
 	}
 	
 }
-
+figure.code figcaption {
+	border: none;
+}
 figure.code {
 	.highlight {
 		.gutter {
+			.line-numbers {
+				background: #ffffff !important;
+				text-shadow: none;
+				border-right: 1px solid #ccc !important;
+			}
 		}
 	}
+}
+
+.highlight {
+	border: 1px solid #ccc !important;
 }
 
 .pre-code, html .gist .gist-file .gist-syntax .highlight pre, .highlight code {
 	background: #fafafa !important;
 }
+
 
 aside {
 	display: none;
