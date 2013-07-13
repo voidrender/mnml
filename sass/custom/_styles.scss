@@ -15,7 +15,7 @@ body {
 	padding-right: 0.5em;
 
 	a:hover {
-		color: #3b185f;
+		color: #3a8acc !important;
 		background: #FFFFFF;
 	}
 
@@ -32,6 +32,14 @@ body {
 			text-transform: lowercase;
 			letter-spacing: 12px;
 			color: #222;
+			a {
+				color: #222;
+				text-decoration: none;
+			}
+			
+			a:hover {
+				color: #3a8acc;
+			};
 		}
 		
 		.header-subtitle {
@@ -121,7 +129,7 @@ body {
 			> article {
 				padding-left: 0px;
 				padding-right: 0px;
-				padding-top: 5.2em;
+				padding-top: 2.3em;
 				h1, h2, h3, h4, h5 {
 					font-family: 'Helvetica Neue', sans-serif;
 					font-weight: 100;
@@ -168,7 +176,7 @@ article {
 
 	.blog-index {
 		article {
-			padding-top: 7em;
+			padding-top: 4em;
 
 			header {
 				padding-top: 2em;
