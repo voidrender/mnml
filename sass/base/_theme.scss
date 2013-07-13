@@ -1,4 +1,3 @@
-$noise-bg: image-url('noise.png') top left !default;
 $img-border: inline-image('dotted-border.png');
 
 // Main Link Colors
@@ -75,10 +74,10 @@ html {
 }
 body {
   > div {
-    background: $sidebar-bg $noise-bg;
+    background: $sidebar-bg;
     border-bottom: 1px solid $page-border-bottom;
     > div {
-      background: $main-bg $noise-bg;
+      background: $main-bg;
       border-right: 1px solid $sidebar-border;
     }
   }
