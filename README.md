@@ -5,6 +5,8 @@ Another minimal theme for [Octopress](http://octopress.org) based on [whiterspac
 
 See it live at [Overacker.me](http://overacker.me).
 
+Using mnml?  Consider adding your site to the [wiki](https://github.com/ioveracker/mnml/wiki)!
+
 #Install
     $ cd octopress
     $ git clone git://github.com/ioveracker/mnml.git .themes/mnml
