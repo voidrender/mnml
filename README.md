@@ -31,3 +31,9 @@ If you'd like to show your host some love, define the `mnml_host_name` *and* `mn
 This will add a sentence to the end of your footer like this:
 
 Hosted by [Heroku](http://heroku.com).
+
+#Plugins
+mnml plays nice with some of the plugins that are out there.
+
+##octopress-responsive-video-embed
+The CSS for [octopress-responsive-video-embed](https://github.com/optikfluffel/octopress-responsive-video-embed) is included in the theme, so if you want to use it you only have to copy the Ruby files into your plugins directory.
