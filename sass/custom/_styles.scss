@@ -1,15 +1,35 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
+// Use this to switch between a light or dark theme
+// The light theme is the default.
+$mnml-dark-theme: false;
+
+// Light theme:
+$themebg: #FFF !default;
+$themecolor: #333 !default;
+$themeaccent: #f8f8f8;
+$codeborder: #CCC;
+$codebg: #FAFAFA;
+
+// Dark theme:
+@if $mnml-dark-theme {
+    $themebg: #222;
+    $themecolor: #CCC;
+    $themeaccent: lighten($themebg, 5);
+    $codeborder: lighten($themebg, 5);
+    $codebg: $themebg;
+}
+
 html {
-	background: #FFFFFF;
+	background: $themebg;
 }
 
 body {
 	font-family: 'Helvetica Neue', sans-serif;
 	font-size: 16px;
 	font-weight: lighter;
-	color: #333;
+	color: $themecolor;
 	max-width: 750px;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
@@ -21,11 +41,11 @@ body {
 
 	a:hover {
 		color: #3a8acc !important;
-		background: #FFFFFF;
+		background: $themebg;
 	}
 
 	> header {
-		background: #ffffff;
+		background: $themebg;
 		padding-top: 2em;
 		padding-bottom: 2em;
 		font-family: 'Helvetica Neue', sans-serif;
@@ -36,9 +56,9 @@ body {
 			font-size: 2em;
 			text-transform: lowercase;
 			letter-spacing: 12px;
-			color: #222;
+			color: $themecolor;
 			a {
-				color: #222;
+				color: $themecolor;
 				text-decoration: none;
 			}
 			
@@ -62,7 +82,7 @@ body {
 	}
 
 	> nav {
-		background: #FFFFFF;
+		background: $themebg;
 		font-size: 20px;
 		font-weight: 100;
 		border-bottom: 1px solid #b0b0b0;
@@ -88,7 +108,7 @@ body {
 			padding-bottom: 0.3em;
 			padding-left: 0.5em;
 			padding-right: 0.5em;
-			background: #f8f8f8;
+			background: $themeaccent;
 		}
 
 		li + li {
@@ -100,18 +120,18 @@ body {
 	}
 
 	> div {
-		background: #FFFFFF;
+		background: $themebg;
 		border-bottom: 0px;
 
 		> div {
-			background: #FFFFFF;
+			background: $themebg;
 			border-right-width: 0px;
 		}
 	}
 
 	> footer {
 		text-align: center;
-		background: #FFFFFF;
+		background: $themebg;
 		text-shadow: none;
 		color: #BBB;
 	  	padding-left: 0;
@@ -232,20 +252,29 @@ figure.code {
 	.highlight {
 		.gutter {
 			.line-numbers {
-				background: #ffffff !important;
+				background: $themebg !important;
 				text-shadow: none;
-				border-right: 1px solid #ccc !important;
+				border-right: 1px solid $codeborder !important;
 			}
 		}
 	}
+    figcaption {
+        border: 1px solid $codeborder !important;
+        span {
+            color: $themecolor;
+        }
+    }
 }
 
 .highlight {
-	border: 1px solid #ccc !important;
+	border: 1px solid $codeborder !important;
+    figcaption {
+        border: 1px solid $codeborder !important;
+    }
 }
 
 .pre-code, html .gist .gist-file .gist-syntax .highlight pre, .highlight code {
-	background: #fafafa !important;
+	background: $codebg !important;
 }
 
 
@@ -266,6 +295,7 @@ h1.entry-title {
 
 	article {
 		h1 {
+            a { color: $themecolor; }
 			a, a:hover {
 				margin-left: 2.0em;	
 				font-family: 'Helvetica Neue', sans-serif;
