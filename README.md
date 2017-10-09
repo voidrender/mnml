@@ -35,8 +35,8 @@ Hosted by [Heroku](http://heroku.com).
 ## Dark Theme
 If you'd like to turn down the white, you can enable a dark theme by setting `mnml-dark-theme` to `true` in `octopress/.themes/mnml/sass/custom/_styles.scss` and then running `rake install['mnml']`.  (Thanks to [AaronLenoir](https://github.com/AaronLenoir) for contributing this!)
 
-#Plugins
+# Plugins
 mnml plays nice with some of the plugins that are out there.
 
-##octopress-responsive-video-embed
+## octopress-responsive-video-embed
 The CSS for [octopress-responsive-video-embed](https://github.com/optikfluffel/octopress-responsive-video-embed) is included in the theme, so if you want to use it you only have to copy the Ruby files into your plugins directory.
