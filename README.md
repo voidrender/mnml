@@ -7,13 +7,13 @@ See it live at [Overacker.me](http://overacker.me).
 
 Using mnml?  Consider adding your site to the [wiki](https://github.com/ioveracker/mnml/wiki)!
 
-#Install
+# Install
     $ cd octopress
     $ git clone git://github.com/ioveracker/mnml.git .themes/mnml
     $ rake install['mnml']
     $ rake generate
     
-#Customization
+# Customization
 
 Mnml supports several customizations that can be added to your `_config.yml` file.
 
